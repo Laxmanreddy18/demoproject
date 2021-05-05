@@ -1,0 +1,17 @@
+// Selecting the check boxes by class name
+List checkbox = driver.findElements(By. className("cb1-element"));
+ 
+        int Size = checkbox.size();     // Finding the number of check boxes
+ 
+        for(int i=0; i &lt; Size; i++)          // Starts the loop from first check box to the last one
+        {   
+String val = checkbox.get(i).getAttribute("value");
+// check box name stored to the string variable, using ‘Value' attribute
+ 
+if (val.equalsIgnoreCase("cb1-element "))
+// equalsIgnoreCase is ignore case (upper/ lower)   
+    {       
+                 // Selecting the check box if its value is same as that we are looking for
+        checkbox.get(i).click();
+        break;
+     }

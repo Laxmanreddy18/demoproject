@@ -1,0 +1,16 @@
+List check = driver.findElements(By.className("cb1-element"));
+
+//Same group of check boxes will have same 'Names'/Class names,
+//hence we need to use findElements method and store the list of WebElements.
+
+boolean bval = false;		 // Create a variable which will have boolean value True/False
+bval = check1.get(0).isSelected();	 // Will return True if box is selected.
+
+if(bval = true)
+{
+check1.get(1).click(); // If the first check box is selected by default, this will select Second check box 
+}
+else
+{
+check1.get(0).click(); // If the first check box is not selected by default, the first will be selected
+} 
