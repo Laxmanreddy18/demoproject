@@ -1,1 +1,9 @@
 README.md  test1.txt
+```
+hai hello github
+welcome to the world
+create  a basic ptoject {
+testdoc(){
+initialize variables
+}
+```
